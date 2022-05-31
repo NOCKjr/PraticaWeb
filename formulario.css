@@ -1,0 +1,14 @@
+form {
+	position: absolute;
+	font-size: 25px;
+	margin-top: 19%;
+	margin-left: 3%;
+	background-color: white;
+}
+body{
+	background-color: #005484;
+}
+
+#submit {
+	margin-left: 40%;
+}

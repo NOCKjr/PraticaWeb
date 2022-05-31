@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Formulario</title>
+		<link rel="stylesheet" type="text/css" href="formulario.css">
+	</head>
+	<body>
+		<form action="formulario.php" method="post">
+			<label for="nome">Nome:</label><br>
+			<input name="nome" type="text"><br>
+			<label for="numero">Numero:</label><br>
+			<input type="text" name="numero" size="12" maxlength="14" value="+55"><br>
+			<label for="idade">data de aniversario:</label><br>
+			<input type="date" name="idade"><br>
+			<label for="itens">utensílios domésticos que você possui:</label><br>
+			<input type="checkbox" value="geladeira">
+			<label for="itens">Geladeira</label><br>
+			<input type="checkbox" value="torradeira">
+			<label for="itens">Torradeira</label><br>
+			<input type="checkbox" value="televisao">
+			<label for="itens">Televisão</label><br>
+			<input type="checkbox" value="batedeira">
+			<label for="itens">Batedeira</label><br><br>
+			<input type="radio" name="termos">
+			<label for="termos">Li e concordo com todos os termos.</label><br>
+			<input type="radio" name="termos">
+			<label for="termos">Não concordo com os termos.</label><br>
+			<input type="submit" id="submit" name="Enviar" value="Enviar">
+		</form>
+	</body>
+</html>
