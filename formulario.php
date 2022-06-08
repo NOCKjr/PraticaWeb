@@ -14,20 +14,13 @@ if($CONEXAO)
 else{
     echo('registro inserido com sucesso!');
 }
+$nome= $_POST['nome'];
+$numero= $_POST['numero'];
+$nascimento= $_POST['nascimento'];
+$email= $_POST['email'];
+$senha= $_POST['senha'];
 
-if(isset($_POST["enviar"])){
-    $nome = isset($_POST["nome"]) ? (string) $_POST["nome"] : NULL;
-    $numero = isset($_POST["numero"]) ? $_POST["numero"] : NULL;
-    $aniversario = isset($_POST["aniversario"]) ? (string) $_POST["aniversario"] : NULL;
-    $utensilios = isset($_POST["check"]) ? $_POST["check"] : NULL;
-    if(!empty($utensilios) && !empty($nome)){ 
-        foreach($utensilios as $val){ 
-            $msg .= $val . "<br/>";
-        }   
-    }   
-}
-
-$sql="INSERT INTO usuarios VALUES ($nome, $numero, $aniversario, $utensilios);";
+$sql="INSERT INTO usuarios VALUES ($nome, $numero, $nascimento,$email, $senha);";
 
 if(!mysqli_query($sql))
 {
