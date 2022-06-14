@@ -1,0 +1,68 @@
+
+body {
+    background-image:url("backgroundblue.gif");
+    }
+    
+    img {
+    width: 30%;
+    left: 90px;
+    top: 70px;
+    }
+    
+    #formulario{
+        margin-left: 70%;
+        position: absolute;
+        width: 15%;
+    }
+    
+    #corpo {
+    text-align: center;
+    text-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 73%;
+    display: block;
+    }
+    
+    #video{
+        width: 82%;
+        height:44%;
+        position: absolute;
+        margin-top: 2%;
+        display: block;
+        margin-right: 10%;
+        margin-left: 9%;
+        margin-bottom: 60%
+    }
+    
+    
+    
+    div.redes{
+    width: 300px;
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 2%;
+    }
+    #face{
+        width: 98px;
+        margin-top: -2%;
+    }
+    
+    #insta{
+        position: absolute;
+        margin-left: 50%;
+        margin-top: -25%;
+    }
+    
+    #whats{
+        position: absolute;
+        margin-left: 125%;
+        margin-top: -25%;
+    }
+    
+    #direitos{
+        text-align: center;
+        margin-top: 15%;
+    }
+
+    
