@@ -1,18 +1,19 @@
 <?php
-$local="locahost";
+
+$local="localhost";
 $usuario="root";
 $senha="";
 $nomebanco="cadastro";
+$porta = "3306";
 
-$CONEXAO = mysqli_connect($local, $usuario, $senha, $nomebanco);
+$conexao = mysqli_connect($local, $usuario, $senha, $nomebanco, $porta);
 
-if(!$CONEXAO)
+if(!$conexao)
 {
     die('não foi possivel conectar no banco de dados!');
 }
+
 else{
-    echo('registro inserido com sucesso!');
+    echo('banco conectado com sucesso!');
 }
-
-
 ?>
