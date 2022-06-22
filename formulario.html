@@ -7,20 +7,40 @@
 		<link rel="stylesheet" type="text/css" href="formulario.css">
 	</head>
 	<body>
-		<form action="formulario.php" method="post">
+		<form action="formulario.php" method="post" onsubmit="return validacao()"">
 			<label for="nome">Nome:</label><br>
-			<input name="nome" type="text" required><br>
+			<input name="nome" type="text" class="formulario" ><br>
 			<label for="nascimento">nascimento</label><br>
-			<input type="date" name="nascimento" required><br>
+			<input type="date" class="formulario" name="nascimento" ><br>
 			<label for="email">Email:</label>
-			<input type="email" name="email"><br>
+			<input type="email" class="formulario" name="email"><br>
 			<label for="senha">senha:</label>
-			<input type="password" name="senha" required><br>
+			<input type="password" class="formulario" name="senha" ><br>
 			<input type="radio" name="termos" required>
 			<label for="termos">Li e concordo com todos os termos.</label><br>
 			<input type="radio" name="termos">
 			<label for="termos">Não concordo com os termos.</label><br>
-			<input type="submit" id="submit" name="Enviar" value="Enviar">
+			<input type="submit" id="submit" name="Enviar" value="Enviar" >
 		</form>
+		<script type="text/javascript">
+			function validacao() {
+				var dados = document.getElementsByClassName("formulario")
+				var tamanho = dados.length
+				var vazio = false 
+				for (var i = 0; i < tamanho; i++){
+					if((dados[i].value == "")){
+						vazio = true
+						break
+					}
+				}
+				if(vazio){
+					alert("por favor, preencha todos os campos!")
+					return false
+				}
+				else{
+					return true
+				}
+			}
+		</script>
 	</body>
 </html>

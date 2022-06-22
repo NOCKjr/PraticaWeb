@@ -18,5 +18,5 @@ else
     echo('a instrução sql foi executada!');
 }
 
-msqli_close($conexao);
+mysqli_close($conexao);
 ?>
